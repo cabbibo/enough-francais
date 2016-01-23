@@ -1,5 +1,6 @@
 function PhysicsText( string , params ){
 
+  console.log( string );
   this.string = string;
   this.active = false;
   this.params = _.defaults( params || {} , {
@@ -14,6 +15,7 @@ function PhysicsText( string , params ){
 
   });
 
+  console.log( G.textParams );
   this.sim = this.params.sim;
   this.particles = new TextParticles( this.string , G.textParams );
 
