@@ -331,7 +331,7 @@ LoadBar.prototype.onFinishedLoad = function(){
 
   this.startButton = document.createElement('div')
   this.startButton.id = 'startButton'
-  this.startButton.innerHTML = 'BEGIN'
+  this.startButton.innerHTML = 'COMMENCER'
 
   this.startButton.addEventListener( 'click' , this.onStartButtonClick.bind(this) , false );
 
