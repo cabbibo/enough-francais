@@ -153,6 +153,23 @@ LoadBar.prototype.addText = function(){
   this.loadBarInfo.style.marginTop = offset + "px"
   //console.log( this.loadBarInfo.clientHeight )
 
+  this.englishButton = document.createElement('div')
+  this.englishButton.id = 'englishButton'
+  this.englishButton.innerHTML = "ENGLISH";
+  this.englishButton.addEventListener( 'click' , function(){ window.location = 'http://cabbi.bo/enough'} , false );
+
+  this.loadBarInfo.appendChild( this.englishButton )
+
+  this.frenchButton = document.createElement('div')
+  this.frenchButton.id = 'frenchButton'
+
+  this.frenchButton.innerHTML = 'DEUTSCH'
+
+  this.frenchButton.addEventListener( 'click' , function(){ window.location = 'http://cabbi.bo/enough-deutsch/'} , false );
+
+  
+  this.loadBarInfo.appendChild( this.frenchButton )
+
 
 
 
